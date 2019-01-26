@@ -63,21 +63,23 @@ body {
 
 #card #heart1 {
 
-    transform:rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
+    transform: rotate(180deg);
    
     -webkit-animation: closeRight 2s ease-in-out forwards;
     -moz-animation: closeRight 2s ease-in-out forwards;
     -ms-animation: closeRight 2s ease-in-out forwards;
     animation: closeRight 2s ease-in-out forwards;
+
+    transform-origin: 0 0; /* same base line with box*/
 }
 
 
 #card:hover #heart1 {
 
-    transform:rotateY(0deg);
+    
     -webkit-animation: openLeft 2s ease-in-out forwards;
     -moz-animation: openLeft 2s ease-in-out forwards;
     -ms-animation: openLeft 2 ease-in-out forwards;
