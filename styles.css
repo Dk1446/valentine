@@ -3,7 +3,7 @@
 
 
 body {
-    background-color: #f06b92;
+    background-color: pink; /*#f06b92;*/
     font-family: 'Poiret One', Segoe UI Light, cursive;
 
 
@@ -29,21 +29,22 @@ body {
 
 /* The two semicircles on top on left flap */
 #card .heart #circle {
-    height: 130px;
-    width: 130px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     background-color: #d32f2f;
+    margin-top: -20px;
 }
 
 
 /* inside of the flap square */
-#card .heart #rec,
-#card .heart #rec2 {
+#card .heart #rec {
     margin-top: -60px;
-    width: 130px;
-    height: 130px;
+    width: 250px;
+    height: 250px;
     background-color: #d32f2f;
     border-radius: 35% 0 0 0;
+
 }
 
 #card .heart #half2 {
@@ -52,8 +53,9 @@ body {
     -webkit-transform: rotate(-90deg);
     /* Chrome, Safari, Opera */
     transform: rotate(-90deg);
-    margin-top: -330px;
+    margin-top: -430px;
     margin-left: -200px;
+    border: 5px solid blue;
 }
 
 /* position of the right white flap */
@@ -81,7 +83,7 @@ body {
 }
 
 /* sizing the card block  */
-#card #message {
+/* #card #message {
     float: left;
     width: 400px;
     height: 400px;
@@ -92,13 +94,13 @@ body {
 }
 
 /* message on the card */
-#card #message h2 {
+/* card #message h2 {
     font-size: 20px;
     color: #fff;
     width: 160px;
     margin-top: 180px;
     margin-left: 120px;
-}
+} */
 
 /* 
 
@@ -116,7 +118,7 @@ animation follows
 
 
 /* Animations to rotate the the flaps */
-#card #heart1 {
+ #card #heart1 {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -146,7 +148,7 @@ animation follows
     -moz-animation: openRight 2s ease-in-out forwards;
     -ms-animation: openRight 2 ease-in-out forwards;
     animation: openRight 2s ease-in-out forwards;
-}
+} 
 
 @-webkit-keyframes closeLeft {
     from {

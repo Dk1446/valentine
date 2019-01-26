@@ -1,0 +1,43 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+body {
+    background-color: pink; /*#f06b92;*/
+    font-family: 'Poiret One', Segoe UI Light, cursive;
+    color: antiquewhite;
+}
+
+/* The box containing the message */
+#card #message {
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin-left: 400px;
+    background-color: #333;
+    border-radius: 45% 0 45% 0;
+    text-align: center;
+}
+/* message on the card */
+#card #message h2 {
+    font-size: 20px;
+    color: #fff;
+    width: 160px;
+    margin-top: 180px;
+    margin-left: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
