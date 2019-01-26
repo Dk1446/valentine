@@ -1,13 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+body {
+    background-color: white;
+    font-family: 'Poiret One', Segoe UI Light, cursive;
+
+
+}
 
 .heart {
-    background-color: red;
+    background-color: #d32f2f;
     display: inline-block;
-    height: 200px;
-    margin: 0 10px;
+    height: 300px;
+    margin: 0 10px; 
     position: relative;
     top: 0;
     /* transform: rotate(-45deg); */
-    width: 200px;
+    width: 300px;
     margin-top: 200px;
     margin-left: 500px;
     /* transform: rotate(0deg); */
@@ -16,21 +25,27 @@
 .heart:before,
 .heart:after {
     content: "";
-    background-color: red;
+    background-color: #d32f2f;
     border-radius: 50%;
-    height: 200px;
+    height: 300px;
     position: absolute;
-    width: 200px;
+    width: 300px;
 }
 
 .heart:before {
-    top: -110px;
+    top: -150px;
     left: 0;
 }
 
 .heart:after {
-    left: 110px;
+    left: 150px;
     top: 0;
+}
+
+
+#card {
+    margin-top: 200px;
+
 }
 
 #message {
@@ -46,21 +61,28 @@
 
 }
 
-#card #heart1{
+#card #heart1 {
 
+    transform:rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+   
     -webkit-animation: closeRight 2s ease-in-out forwards;
     -moz-animation: closeRight 2s ease-in-out forwards;
     -ms-animation: closeRight 2s ease-in-out forwards;
     animation: closeRight 2s ease-in-out forwards;
 }
 
+
 #card:hover #heart1 {
+
+    transform:rotateY(0deg);
     -webkit-animation: openLeft 2s ease-in-out forwards;
     -moz-animation: openLeft 2s ease-in-out forwards;
     -ms-animation: openLeft 2 ease-in-out forwards;
     animation: openLeft 2s ease-in-out forwards;
 }
-
 
 
 @-webkit-keyframes closeRight {
@@ -102,7 +124,6 @@
         transform: rotateX(180deg);
     }
 }
-
 @-moz-keyframes openLeft {
     from {
         -moz-transform: rotateY(180deg);
@@ -144,6 +165,8 @@
 }
 
 
+
+
 /* #message h2 {
 
     text-align: center;
@@ -155,7 +178,7 @@
 
     /* margin-top: 10px;
     margin-right: 40px; */
-    /* left:200px;
+/* left:200px;
    
 
     transform: rotate(180deg);
