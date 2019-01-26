@@ -9,12 +9,12 @@ body {
 
 }
 
-/* below is for the plavement of the artifact */
+/* below is for the placement of the artifact */
 
 #card {
     position: absolute;
     top: 200px;
-    width: 460px;
+    width: 800px;
     height: 260px;
     left: 50%;
     margin-left: -230px;
@@ -76,8 +76,8 @@ body {
 
 #card #message {
     float: left;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     margin-left: -130px;
     background-color: #333;
     border-radius: 35% 0 35% 0;
