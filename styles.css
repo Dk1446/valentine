@@ -57,12 +57,13 @@ body {
     margin-left: -200px;
 }
 
-/* position of the right white */
+/* position of the right white flap */
 #card #heart2 {
     margin-top: -60px;
     margin-left: -130px;
 }
 
+/* position of the left red flap */
 #card #heart1{
 
  margin-top: 200px;
