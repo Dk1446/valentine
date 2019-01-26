@@ -43,7 +43,6 @@ body {
 /* inside of the flap square */
 #card .heart #rec
 {
-
     margin-top: -60px;
     /* margin-right: -140px; */
     width: 180px;
@@ -51,6 +50,8 @@ body {
     background-color: #d32f2f;
     border-radius: 35% 0 0 0;
     /* border: 5px solid black; */
+
+   
 }
 
 /* #card .heart #rec2 {
@@ -80,8 +81,8 @@ body {
 /* position of the left red flap */
 #card #heart1 {
 
-    margin-top: 80px;
-    margin-left: -100px;
+    margin-top: 100px;
+    margin-left: -50px;
 }
 
 /* color of the right flap */
