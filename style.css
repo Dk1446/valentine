@@ -27,6 +27,37 @@ body {
     margin-left: 120px;
 }
 
+#card .heart #circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #d32f2f;
+    margin-top: -20px;
+}
+#card .heart #rec {
+    margin-top: -60px;
+    width: 250px;
+    height: 250px;
+    background-color: #d32f2f;
+    border-radius: 35% 0 0 0;
+
+}
+
+#card .heart #half2 {
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    margin-top: -430px;
+    margin-left: -200px;
+    border: 5px solid blue;
+}
+
+
+
+
+
 
 
 
