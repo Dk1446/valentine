@@ -63,6 +63,12 @@ body {
     margin-left: -130px;
 }
 
+#card #heart1{
+
+ margin-top: 200px;
+    margin-left: -130px;
+}
+
 /* color of the right flap */
 #card #heart2 #circle,
 #card #heart2 #rec {
