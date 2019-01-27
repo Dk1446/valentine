@@ -2,61 +2,115 @@
 
 
 html{
-
+ margin: 0;
+ padding:0;
     background-image: url(bg.jpeg);
     
     background-size: cover;  
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  
 }
+
 body {
     
     font-family: 'Poiret One', Segoe UI Light, cursive;
-    
-
 }
 
-.heart {
+.heart1 {
     background-color: #d32f2f;
     display: inline-block;
-    height: 300px;
+    height: 250px;
     margin: 0 10px;
     position: relative;
 
     top: 0; /*changed SOverflow*/
     /* transform: rotate(-45deg); */
-    width: 300px;
+    width: 250px;
     margin-top: 200px;
     margin-left: 500px;
     /* transform: rotate(0deg); */
 }
 
-.heart:before,
-.heart:after {
+.heart1:before,
+.heart1:after {
     content: "";
     background-color: #d32f2f;
     border-radius: 50%;
-    height: 300px;
+    height: 250px;
     position: absolute;
-    width: 300px;
+    width: 250px;
 }
 
-.heart:before {
+.heart1:before {
+    
     top: -140px;
     left: 0;
 }
 
-.heart:after {
+.heart1:after {
     left: 140px;
     top: 0;
 }
 
 
-#card {
-    margin-top: 50px;
 
+
+
+/* Heart on the right */
+
+
+.heart2 {
+    background-color: antiquewhite;
+    display: inline-block;
+    height: 250px;
+    margin: 0 10px;
+    position: absolute;
+
+    /* top: 0; changed SOverflow */
+    /* transform: rotate(-45deg); */
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 655px;
+    /* transform: rotate(0deg); */
+    transform: rotate(180deg);
+    left:270px;
+    top: 212px;
+}
+
+.heart2:before,
+.heart2:after {
+    content: "";
+    background-color: antiquewhite;
+    border-radius: 50%;
+    height: 250px;
+    position: absolute;
+    width: 250px;
+}
+
+.heart2:before {
+    
+    top: -140px;
+    left: 0;
+}
+
+.heart2:after {
+    left: 140px;
+    top: 0;
+}
+
+
+
+
+
+#card {
+    margin-top: 140px;
+    padding: 20px;
+    position:absolute;
+    border: 3px dashed #AB47BC;
+    
+
+    
 }
 
 #message {
@@ -69,10 +123,15 @@ body {
     color: white;
     border: 3px dashed #AB47BC;
     border-radius: 35% 0 35% 0;
+    
+    
+    
+    
 
 }
 
-#card #heart1 {
+
+#card #heartleft {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -85,7 +144,7 @@ body {
 }
 
 
-#card:hover #heart1 {
+#card:hover #heartleft {
     -webkit-animation: openLeft 2s ease-in-out forwards;
     -moz-animation: openLeft 2s ease-in-out forwards;
     -ms-animation: openLeft 2 ease-in-out forwards;
@@ -173,3 +232,100 @@ body {
 }
 
 
+
+
+#card #heartright {
+    -webkit-animation: closeRight 2s ease-in-out forwards;
+    -moz-animation: closeRight 2s ease-in-out forwards;
+    -ms-animation: closeRight 2s ease-in-out forwards;
+    animation: closeRight 2s ease-in-out forwards;
+    transform-origin: 0 0;
+}
+
+#card:hover #heartright {
+    -webkit-animation: openRight 2s ease-in-out forwards;
+    -moz-animation: openRight 2s ease-in-out forwards;
+    -ms-animation: openRight 2 ease-in-out forwards;
+    animation: openRight 2s ease-in-out forwards;
+} 
+
+
+@-moz-keyframes openRight {
+    0% {
+        -moz-transform: rotateX(180deg);
+    }
+
+    100% {
+        -moz-transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+@-webkit-keyframes openRight {
+    0% {
+        -webkit-transform: rotateX(180deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+@-ms-keyframes openRight {
+    0% {
+        -ms-transform: rotateX(180deg);
+    }
+
+    100% {
+        -ms-transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+@keyframes openRight {
+    0% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+@-webkit-keyframes closeRight {
+    from {
+        -webkit-transform: rotateX(0deg) rotate(180deg);
+    }
+
+    to {
+        -webkit-transform: rotateX(180deg);
+    }
+}
+
+@-moz-keyframes closeRight {
+    from {
+        -moz-transform: rotateX(0deg) rotate(180deg);
+    }
+
+    to {
+        -moz-transform: rotateX(180deg);
+    }
+}
+
+@-ms-keyframes closeRight {
+    from {
+        -ms-transform: rotateX(0deg) rotate(180deg);
+    }
+
+    to {
+        -ms-transform: rotateX(180deg);
+    }
+}
+
+@keyframes closeRight {
+    from {
+        transform: rotateX(0deg) rotate(180deg);
+    }
+
+    to {
+        transform: rotateX(180deg);
+    }
+}
