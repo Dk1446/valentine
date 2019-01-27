@@ -123,11 +123,13 @@ body {
     color: white;
     border: 3px dashed #AB47BC;
     border-radius: 35% 0 35% 0;
+}
 
+#card #message h2{
 
-
-
-
+    
+    
+    border: 3px dashed #AB47BC;
 }
 
 
