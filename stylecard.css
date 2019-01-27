@@ -1,19 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-
-html{
- margin: 0;
- padding:0;
+html {
+    margin: 0;
+    padding: 0;
     background-image: url(bg.jpeg);
-    
-    background-size: cover;  
+
+    background-size: cover;
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 body {
-    
+
     font-family: 'Poiret One', Segoe UI Light, cursive;
 }
 
@@ -24,7 +23,8 @@ body {
     margin: 0 10px;
     position: relative;
 
-    top: 0; /*changed SOverflow*/
+    top: 0;
+    /*changed SOverflow*/
     /* transform: rotate(-45deg); */
     width: 250px;
     margin-top: 200px;
@@ -43,7 +43,7 @@ body {
 }
 
 .heart1:before {
-    
+
     top: -140px;
     left: 0;
 }
@@ -74,7 +74,7 @@ body {
     margin-left: 655px;
     /* transform: rotate(0deg); */
     transform: rotate(180deg);
-    left:270px;
+    left: 271px;
     top: 212px;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .heart2:before {
-    
+
     top: -140px;
     left: 0;
 }
@@ -106,11 +106,11 @@ body {
 #card {
     margin-top: 140px;
     padding: 20px;
-    position:absolute;
+    position: absolute;
     border: 3px dashed #AB47BC;
-    
 
-    
+
+
 }
 
 #message {
@@ -123,10 +123,10 @@ body {
     color: white;
     border: 3px dashed #AB47BC;
     border-radius: 35% 0 35% 0;
-    
-    
-    
-    
+
+
+
+
 
 }
 
@@ -247,7 +247,7 @@ body {
     -moz-animation: openRight 2s ease-in-out forwards;
     -ms-animation: openRight 2 ease-in-out forwards;
     animation: openRight 2s ease-in-out forwards;
-} 
+}
 
 
 @-moz-keyframes openRight {
