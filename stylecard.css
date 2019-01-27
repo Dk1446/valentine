@@ -1,9 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-body {
-    background-color: white;
-    font-family: 'Poiret One', Segoe UI Light, cursive;
+
+html{
+
     background-image: url(bg.jpeg);
+    
+    background-size: cover;  
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+}
+body {
+    
+    font-family: 'Poiret One', Segoe UI Light, cursive;
+    
+
 }
 
 .heart {
