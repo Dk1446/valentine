@@ -3,7 +3,7 @@
 html {
     margin: 0;
     padding: 0;
-    background-image: url(bg.jpeg);
+    /* background-image: url(bg.jpeg); */
 
     background-size: cover;
     -webkit-background-size: cover;
@@ -16,6 +16,16 @@ body {
     font-family: 'Poiret One', Segoe UI Light, cursive;
 }
 
+
+#mail{
+    width: 150px;
+    height: 150px;
+    
+    background-size: cover;
+    background-color: red;
+    background-image: url(mail.png);
+    
+}
 
 /* move the card */
 #card{
